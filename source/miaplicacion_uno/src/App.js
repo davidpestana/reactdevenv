@@ -19,7 +19,7 @@ class App extends Component {
   joven3 = new Joven('Luis', 'Rubio', 29, 'San Pedro Pascual', 7);
 
 
-  arrayPersonas = [adulto1, joven1, adulto2, joven2, adulto3, joven3];
+  arrayPersonas = [this.adulto1, this.joven1, this.adulto2, this.joven2, this.adulto3, this.joven3];
 
   
   mostrarPersona = (persona) => {
@@ -33,7 +33,7 @@ class App extends Component {
           <h1 className="App-title">¡Mi Listado de Personas!</h1>
         </header>
       <div>
-      { arrayPersonas.map( (persona, index) => {
+      { this.arrayPersonas.map( (persona, index) => {
         return <div key={index}><h3> { persona.mostrar() }</h3></div>;
         })
       }
