@@ -18,6 +18,9 @@ class App extends Component {
   joven2 = new Joven('Juan', 'García', 29, 'Ciudad de Bolonia', 12);
   joven3 = new Joven('Luis', 'Rubio', 29, 'San Pedro Pascual', 7);
 
+
+  arrayPersonas = [adulto1, joven1, adulto2, joven2, adulto3, joven3];
+
   
   mostrarPersona = (persona) => {
     return `¡Hola! Soy ${persona.nombre} y tengo ${persona.edad} años`;
