@@ -5,14 +5,9 @@ import './App.css';
 
 class App extends Component {
 
-  persona = {
-    nombre: 'Pepe', 
-    edad: 21
-  };
-
-  mostrarPersona(persona) {
-    // return '¡Hola! Soy ' + persona.nombre + ' y tengo'; 
-
+  persona = { nombre: 'Pepe', edad: 21 };
+  
+  mostrarPersona = (persona) => {
     return `¡Hola! Soy ${persona.nombre} y tengo ${persona.edad} años`;
   }
 
@@ -26,7 +21,7 @@ class App extends Component {
           </h1>
         </header>
         <p>
-          { mostrarPersona(persona) }
+          { this.mostrarPersona(persona) }
         </p>
       </div>
     );
