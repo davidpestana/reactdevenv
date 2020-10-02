@@ -2,7 +2,19 @@ import React, {Component} from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+
 class App extends Component {
+
+  persona = {
+    nombre: 'Pepe', 
+    edad: 21
+  };
+
+  mostrarPersona(persona) {
+    // return '¡Hola! Soy ' + persona.nombre + ' y tengo'; 
+
+    return `¡Hola! Soy ${persona.nombre} y tengo ${persona.edad} años`;
+  }
 
   render() {
     return (
@@ -14,7 +26,7 @@ class App extends Component {
           </h1>
         </header>
         <p>
-          Esta es mi primera App en React JS
+          { mostrarPersona(persona) }
         </p>
       </div>
     );

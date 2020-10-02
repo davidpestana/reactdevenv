@@ -2,7 +2,21 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+function mostrarPersona(persona) {
+  return `¡Hola! Soy ${persona.nombre} y tengo ${persona.edad} años`;
+}
+
 function App() {
+
+  const persona = {
+    nombre: 'Pepe', 
+    edad: 21
+  };
+
+  mostrarPersona = (persona) => {
+    return `¡Hola! Soy ${persona.nombre} y tengo ${persona.edad} años`;
+  }
+
   return (
     <div className="App">
       <header className="App-header">
