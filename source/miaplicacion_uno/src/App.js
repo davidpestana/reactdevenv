@@ -13,6 +13,9 @@ class App extends Component {
             ¡Hola, Mundo!
           </h1>
         </header>
+        <p>
+          Esta es mi primera App en React JS
+        </p>
       </div>
     );
 
