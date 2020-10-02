@@ -21,7 +21,7 @@ class App extends Component {
           </h1>
         </header>
         <p>
-          { this.mostrarPersona(persona) }
+          { this.mostrarPersona(this.persona) }
         </p>
       </div>
     );
